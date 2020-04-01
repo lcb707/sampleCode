@@ -9,18 +9,17 @@ tsc --init
 #### tsconfig.json
 ```javascript
 {
-  “compilerOptions”: {
-    "lib": ["es5", "es6"],
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "outDir": "./build",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "sourceMap": true
+   "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "sourceMap": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "removeComments": true,
+      "noImplicitAny": false,
+      "outDir": "./output"
   },
-  "exclude" : [ ],
-  "include" : [ ]
+  "include": ["./src"]  
 }
 ```
 
